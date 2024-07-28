@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Scanning QR Code for Oven Pairing</string>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>INAlternativeAppNames</key>
+	<array>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>Oven</string>
+		</dict>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>Entropy</string>
+		</dict>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>Entropy Kitchen</string>
+		</dict>
+	</array>
+</dict>
+</plist>

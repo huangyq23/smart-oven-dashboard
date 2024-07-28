@@ -1,0 +1,15 @@
+name: CodeScanner, nameSpecified: CodeScanner, owner: twostraws, version: 2.3.3, source: https://github.com/twostraws/CodeScanner
+
+name: GRDB.swift, nameSpecified: GRDB.swift, owner: groue, version: 6.23.0, source: https://github.com/groue/GRDB.swift
+
+name: GRDBQuery, nameSpecified: GRDBQuery, owner: groue, version: 0.8.0, source: https://github.com/groue/GRDBQuery
+
+name: keychain-swift, nameSpecified: KeychainSwift, owner: evgenyneu, version: 20.0.0, source: https://github.com/evgenyneu/keychain-swift
+
+name: SwiftSoup, nameSpecified: SwiftSoup, owner: scinfu, version: 2.6.1, source: https://github.com/scinfu/SwiftSoup
+
+name: SwiftyJSON, nameSpecified: SwiftyJSON, owner: SwiftyJSON, version: 5.0.1, source: https://github.com/SwiftyJSON/SwiftyJSON
+
+add-version-numbers: false
+
+LicensePlist Version: 3.25.1

@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA17BB892B57741800BE83B9 /* BooleanHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17BB882B57741800BE83B9 /* BooleanHistoryView.swift */; };
+		AA17BB8B2B57844500BE83B9 /* PowerUsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA17BB8A2B57844500BE83B9 /* PowerUsageView.swift */; };
+		AA4010712B52303C00CCAC9B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4010702B52303C00CCAC9B /* SettingsView.swift */; };
+		AA4010762B544C2C00CCAC9B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = AA4010752B544C2C00CCAC9B /* CodeScanner */; };
+		AA4010782B54843300CCAC9B /* DocumentInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4010772B54843300CCAC9B /* DocumentInteractionController.swift */; };
+		AA5D61462B29680800D6E0F6 /* SmartOvenDashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D61452B29680800D6E0F6 /* SmartOvenDashboardApp.swift */; };
+		AA5D61482B29680800D6E0F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D61472B29680800D6E0F6 /* ContentView.swift */; };
+		AA5D614A2B29680900D6E0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5D61492B29680900D6E0F6 /* Assets.xcassets */; };
+		AA5D614E2B29680900D6E0F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5D614D2B29680900D6E0F6 /* Preview Assets.xcassets */; };
+		AA5D61582B29680900D6E0F6 /* SmartOvenDashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D61572B29680900D6E0F6 /* SmartOvenDashboardTests.swift */; };
+		AA5D61622B29680900D6E0F6 /* SmartOvenDashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D61612B29680900D6E0F6 /* SmartOvenDashboardUITests.swift */; };
+		AA5D61642B29680900D6E0F6 /* SmartOvenDashboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D61632B29680900D6E0F6 /* SmartOvenDashboardUITestsLaunchTests.swift */; };
+		AA6E52992B3CC78000A8565A /* DevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E52982B3CC78000A8565A /* DevicesManager.swift */; };
+		AA6E529B2B3CD2DE00A8565A /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E529A2B3CD2DE00A8565A /* Fixtures.swift */; };
+		AA6E529E2B3D2E0000A8565A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = AA6E529D2B3D2E0000A8565A /* GRDB */; };
+		AA7B7FF12B3B91BE003CAA31 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = AA7B7FF02B3B91BE003CAA31 /* SwiftSoup */; };
+		AA7B7FF42B3BB54F003CAA31 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = AA7B7FF32B3BB54F003CAA31 /* SwiftyJSON */; };
+		AA7B7FF62B3BB7DE003CAA31 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7FF52B3BB7DE003CAA31 /* AuthenticationService.swift */; };
+		AA7B7FF92B3BBE86003CAA31 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA7B7FF82B3BBE86003CAA31 /* KeychainSwift */; };
+		AA7B7FFB2B3BBEAF003CAA31 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7FFA2B3BBEAF003CAA31 /* TokenManager.swift */; };
+		AA7B7FFD2B3BC7CB003CAA31 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7FFC2B3BC7CB003CAA31 /* WebSocketManager.swift */; };
+		AA7B7FFF2B3BCA7F003CAA31 /* OvenMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7FFE2B3BCA7F003CAA31 /* OvenMessages.swift */; };
+		AA8606262B40BE4C00D7292C /* OvenIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8606252B40BE4C00D7292C /* OvenIntent.swift */; };
+		AA8606282B40C61F00D7292C /* OvenShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8606272B40C61F00D7292C /* OvenShortcuts.swift */; };
+		AA86062B2B40DBCE00D7292C /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86062A2B40DBCE00D7292C /* Logging.swift */; };
+		AA86062D2B4102F300D7292C /* LoginStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86062C2B4102F300D7292C /* LoginStatusView.swift */; };
+		AA86062F2B41032600D7292C /* WebAuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86062E2B41032600D7292C /* WebAuthenticationSession.swift */; };
+		AAC4C8762B4FADB3000E18B4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4C8752B4FADB3000E18B4 /* Helper.swift */; };
+		AAC4C8782B50F084000E18B4 /* TestUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4C8772B50F084000E18B4 /* TestUIView.swift */; };
+		AAD1B5F82B412A6300E7C98C /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1B5F72B412A6300E7C98C /* AppDatabase.swift */; };
+		AAD1B5FC2B412ABE00E7C98C /* HistoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1B5FA2B412ABE00E7C98C /* HistoryRequest.swift */; };
+		AAD1B5FD2B412ABE00E7C98C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1B5FB2B412ABE00E7C98C /* Persistence.swift */; };
+		AAD1B5FE2B412ABE00E7C98C /* HistoryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1B5F92B412ABE00E7C98C /* HistoryPoint.swift */; };
+		AAD1B6012B4131E300E7C98C /* GRDBQuery in Frameworks */ = {isa = PBXBuildFile; productRef = AAD1B6002B4131E300E7C98C /* GRDBQuery */; };
+		AAD1B6032B4142FF00E7C98C /* StoredTemperatureHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1B6022B4142FF00E7C98C /* StoredTemperatureHistoryView.swift */; };
+		AAE1669D2B3E69780072BEB4 /* QuickControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1669C2B3E69780072BEB4 /* QuickControlsView.swift */; };
+		AAE7CA2F2B4CEA6600B664E1 /* DisplaySettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7CA2E2B4CEA6600B664E1 /* DisplaySettingsManager.swift */; };
+		AAE7CA312B4CFDF600B664E1 /* TemperatureUnitPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7CA302B4CFDF600B664E1 /* TemperatureUnitPickerView.swift */; };
+		AAE7CA332B4D05F200B664E1 /* TimeIntervalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7CA322B4D05F200B664E1 /* TimeIntervalPickerView.swift */; };
+		AAE7CA362B4DD24400B664E1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAE7CA352B4DD24400B664E1 /* Settings.bundle */; };
+		AAE7CA382B4DD41600B664E1 /* license_plist.yml in Resources */ = {isa = PBXBuildFile; fileRef = AAE7CA372B4DD41600B664E1 /* license_plist.yml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA5D61542B29680900D6E0F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5D613A2B29680800D6E0F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5D61412B29680800D6E0F6;
+			remoteInfo = SmartOvenDashboard;
+		};
+		AA5D615E2B29680900D6E0F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5D613A2B29680800D6E0F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5D61412B29680800D6E0F6;
+			remoteInfo = SmartOvenDashboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA17BB882B57741800BE83B9 /* BooleanHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanHistoryView.swift; sourceTree = "<group>"; };
+		AA17BB8A2B57844500BE83B9 /* PowerUsageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUsageView.swift; sourceTree = "<group>"; };
+		AA4010702B52303C00CCAC9B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA4010772B54843300CCAC9B /* DocumentInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInteractionController.swift; sourceTree = "<group>"; };
+		AA5D61422B29680800D6E0F6 /* SmartOvenDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartOvenDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5D61452B29680800D6E0F6 /* SmartOvenDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartOvenDashboardApp.swift; sourceTree = "<group>"; };
+		AA5D61472B29680800D6E0F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA5D61492B29680900D6E0F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5D614B2B29680900D6E0F6 /* SmartOvenDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartOvenDashboard.entitlements; sourceTree = "<group>"; };
+		AA5D614D2B29680900D6E0F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA5D61532B29680900D6E0F6 /* SmartOvenDashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartOvenDashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5D61572B29680900D6E0F6 /* SmartOvenDashboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartOvenDashboardTests.swift; sourceTree = "<group>"; };
+		AA5D615D2B29680900D6E0F6 /* SmartOvenDashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartOvenDashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5D61612B29680900D6E0F6 /* SmartOvenDashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartOvenDashboardUITests.swift; sourceTree = "<group>"; };
+		AA5D61632B29680900D6E0F6 /* SmartOvenDashboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartOvenDashboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA6E52982B3CC78000A8565A /* DevicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesManager.swift; sourceTree = "<group>"; };
+		AA6E529A2B3CD2DE00A8565A /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		AA7B7FF52B3BB7DE003CAA31 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		AA7B7FFA2B3BBEAF003CAA31 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		AA7B7FFC2B3BC7CB003CAA31 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		AA7B7FFE2B3BCA7F003CAA31 /* OvenMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvenMessages.swift; sourceTree = "<group>"; };
+		AA8606252B40BE4C00D7292C /* OvenIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvenIntent.swift; sourceTree = "<group>"; };
+		AA8606272B40C61F00D7292C /* OvenShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvenShortcuts.swift; sourceTree = "<group>"; };
+		AA8606292B40CA9700D7292C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AA86062A2B40DBCE00D7292C /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		AA86062C2B4102F300D7292C /* LoginStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStatusView.swift; sourceTree = "<group>"; };
+		AA86062E2B41032600D7292C /* WebAuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthenticationSession.swift; sourceTree = "<group>"; };
+		AAC4C8752B4FADB3000E18B4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AAC4C8772B50F084000E18B4 /* TestUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIView.swift; sourceTree = "<group>"; };
+		AAD1B5F72B412A6300E7C98C /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		AAD1B5F92B412ABE00E7C98C /* HistoryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPoint.swift; sourceTree = "<group>"; };
+		AAD1B5FA2B412ABE00E7C98C /* HistoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRequest.swift; sourceTree = "<group>"; };
+		AAD1B5FB2B412ABE00E7C98C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AAD1B6022B4142FF00E7C98C /* StoredTemperatureHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredTemperatureHistoryView.swift; sourceTree = "<group>"; };
+		AAE1669C2B3E69780072BEB4 /* QuickControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickControlsView.swift; sourceTree = "<group>"; };
+		AAE7CA2E2B4CEA6600B664E1 /* DisplaySettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySettingsManager.swift; sourceTree = "<group>"; };
+		AAE7CA302B4CFDF600B664E1 /* TemperatureUnitPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureUnitPickerView.swift; sourceTree = "<group>"; };
+		AAE7CA322B4D05F200B664E1 /* TimeIntervalPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalPickerView.swift; sourceTree = "<group>"; };
+		AAE7CA352B4DD24400B664E1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		AAE7CA372B4DD41600B664E1 /* license_plist.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = license_plist.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5D613F2B29680800D6E0F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7B7FF92B3BBE86003CAA31 /* KeychainSwift in Frameworks */,
+				AA7B7FF42B3BB54F003CAA31 /* SwiftyJSON in Frameworks */,
+				AA4010762B544C2C00CCAC9B /* CodeScanner in Frameworks */,
+				AA7B7FF12B3B91BE003CAA31 /* SwiftSoup in Frameworks */,
+				AAD1B6012B4131E300E7C98C /* GRDBQuery in Frameworks */,
+				AA6E529E2B3D2E0000A8565A /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5D61502B29680900D6E0F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5D615A2B29680900D6E0F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA5D61392B29680800D6E0F6 = {
+			isa = PBXGroup;
+			children = (
+				AAE7CA372B4DD41600B664E1 /* license_plist.yml */,
+				AA5D61442B29680800D6E0F6 /* SmartOvenDashboard */,
+				AA5D61562B29680900D6E0F6 /* SmartOvenDashboardTests */,
+				AA5D61602B29680900D6E0F6 /* SmartOvenDashboardUITests */,
+				AA5D61432B29680800D6E0F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5D61432B29680800D6E0F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D61422B29680800D6E0F6 /* SmartOvenDashboard.app */,
+				AA5D61532B29680900D6E0F6 /* SmartOvenDashboardTests.xctest */,
+				AA5D615D2B29680900D6E0F6 /* SmartOvenDashboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5D61442B29680800D6E0F6 /* SmartOvenDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D61452B29680800D6E0F6 /* SmartOvenDashboardApp.swift */,
+				AAD1B5F72B412A6300E7C98C /* AppDatabase.swift */,
+				AAD1B5FB2B412ABE00E7C98C /* Persistence.swift */,
+				AAD1B5F92B412ABE00E7C98C /* HistoryPoint.swift */,
+				AAD1B5FA2B412ABE00E7C98C /* HistoryRequest.swift */,
+				AA8606342B41052E00D7292C /* Utils */,
+				AA8606332B41051500D7292C /* Views */,
+				AA8606322B41050300D7292C /* App Intents */,
+				AA8606312B4104F700D7292C /* Models */,
+				AA8606302B4104D700D7292C /* Services */,
+				AA8606292B40CA9700D7292C /* Info.plist */,
+				AA5D61492B29680900D6E0F6 /* Assets.xcassets */,
+				AA5D614B2B29680900D6E0F6 /* SmartOvenDashboard.entitlements */,
+				AA5D614C2B29680900D6E0F6 /* Preview Content */,
+				AAE7CA352B4DD24400B664E1 /* Settings.bundle */,
+				AAC4C8772B50F084000E18B4 /* TestUIView.swift */,
+			);
+			path = SmartOvenDashboard;
+			sourceTree = "<group>";
+		};
+		AA5D614C2B29680900D6E0F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D614D2B29680900D6E0F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA5D61562B29680900D6E0F6 /* SmartOvenDashboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D61572B29680900D6E0F6 /* SmartOvenDashboardTests.swift */,
+			);
+			path = SmartOvenDashboardTests;
+			sourceTree = "<group>";
+		};
+		AA5D61602B29680900D6E0F6 /* SmartOvenDashboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D61612B29680900D6E0F6 /* SmartOvenDashboardUITests.swift */,
+				AA5D61632B29680900D6E0F6 /* SmartOvenDashboardUITestsLaunchTests.swift */,
+			);
+			path = SmartOvenDashboardUITests;
+			sourceTree = "<group>";
+		};
+		AA8606302B4104D700D7292C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA7B7FF52B3BB7DE003CAA31 /* AuthenticationService.swift */,
+				AA7B7FFA2B3BBEAF003CAA31 /* TokenManager.swift */,
+				AA7B7FFC2B3BC7CB003CAA31 /* WebSocketManager.swift */,
+				AA6E52982B3CC78000A8565A /* DevicesManager.swift */,
+				AAE7CA2E2B4CEA6600B664E1 /* DisplaySettingsManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA8606312B4104F700D7292C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA7B7FFE2B3BCA7F003CAA31 /* OvenMessages.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA8606322B41050300D7292C /* App Intents */ = {
+			isa = PBXGroup;
+			children = (
+				AA8606252B40BE4C00D7292C /* OvenIntent.swift */,
+				AA8606272B40C61F00D7292C /* OvenShortcuts.swift */,
+			);
+			path = "App Intents";
+			sourceTree = "<group>";
+		};
+		AA8606332B41051500D7292C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAD1B6022B4142FF00E7C98C /* StoredTemperatureHistoryView.swift */,
+				AA17BB882B57741800BE83B9 /* BooleanHistoryView.swift */,
+				AA17BB8A2B57844500BE83B9 /* PowerUsageView.swift */,
+				AA5D61472B29680800D6E0F6 /* ContentView.swift */,
+				AAE1669C2B3E69780072BEB4 /* QuickControlsView.swift */,
+				AA86062C2B4102F300D7292C /* LoginStatusView.swift */,
+				AA86062E2B41032600D7292C /* WebAuthenticationSession.swift */,
+				AAE7CA302B4CFDF600B664E1 /* TemperatureUnitPickerView.swift */,
+				AAE7CA322B4D05F200B664E1 /* TimeIntervalPickerView.swift */,
+				AA4010702B52303C00CCAC9B /* SettingsView.swift */,
+				AA4010772B54843300CCAC9B /* DocumentInteractionController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA8606342B41052E00D7292C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA6E529A2B3CD2DE00A8565A /* Fixtures.swift */,
+				AA86062A2B40DBCE00D7292C /* Logging.swift */,
+				AAC4C8752B4FADB3000E18B4 /* Helper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5D61412B29680800D6E0F6 /* SmartOvenDashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5D61672B29680900D6E0F6 /* Build configuration list for PBXNativeTarget "SmartOvenDashboard" */;
+			buildPhases = (
+				AAE7CA392B4DD46400B664E1 /* ShellScript */,
+				AA5D613E2B29680800D6E0F6 /* Sources */,
+				AA5D613F2B29680800D6E0F6 /* Frameworks */,
+				AA5D61402B29680800D6E0F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartOvenDashboard;
+			packageProductDependencies = (
+				AA7B7FF02B3B91BE003CAA31 /* SwiftSoup */,
+				AA7B7FF32B3BB54F003CAA31 /* SwiftyJSON */,
+				AA7B7FF82B3BBE86003CAA31 /* KeychainSwift */,
+				AA6E529D2B3D2E0000A8565A /* GRDB */,
+				AAD1B6002B4131E300E7C98C /* GRDBQuery */,
+				AA4010752B544C2C00CCAC9B /* CodeScanner */,
+			);
+			productName = SmartOvenDashboard;
+			productReference = AA5D61422B29680800D6E0F6 /* SmartOvenDashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA5D61522B29680900D6E0F6 /* SmartOvenDashboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5D616A2B29680900D6E0F6 /* Build configuration list for PBXNativeTarget "SmartOvenDashboardTests" */;
+			buildPhases = (
+				AA5D614F2B29680900D6E0F6 /* Sources */,
+				AA5D61502B29680900D6E0F6 /* Frameworks */,
+				AA5D61512B29680900D6E0F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5D61552B29680900D6E0F6 /* PBXTargetDependency */,
+			);
+			name = SmartOvenDashboardTests;
+			productName = SmartOvenDashboardTests;
+			productReference = AA5D61532B29680900D6E0F6 /* SmartOvenDashboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA5D615C2B29680900D6E0F6 /* SmartOvenDashboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5D616D2B29680900D6E0F6 /* Build configuration list for PBXNativeTarget "SmartOvenDashboardUITests" */;
+			buildPhases = (
+				AA5D61592B29680900D6E0F6 /* Sources */,
+				AA5D615A2B29680900D6E0F6 /* Frameworks */,
+				AA5D615B2B29680900D6E0F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5D615F2B29680900D6E0F6 /* PBXTargetDependency */,
+			);
+			name = SmartOvenDashboardUITests;
+			productName = SmartOvenDashboardUITests;
+			productReference = AA5D615D2B29680900D6E0F6 /* SmartOvenDashboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5D613A2B29680800D6E0F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					AA5D61412B29680800D6E0F6 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					AA5D61522B29680900D6E0F6 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = AA5D61412B29680800D6E0F6;
+					};
+					AA5D615C2B29680900D6E0F6 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = AA5D61412B29680800D6E0F6;
+					};
+				};
+			};
+			buildConfigurationList = AA5D613D2B29680800D6E0F6 /* Build configuration list for PBXProject "SmartOvenDashboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5D61392B29680800D6E0F6;
+			packageReferences = (
+				AA7B7FEF2B3B91BE003CAA31 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				AA7B7FF22B3BB54F003CAA31 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				AA7B7FF72B3BBE86003CAA31 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				AA6E529C2B3D2E0000A8565A /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				AAD1B5FF2B4131E300E7C98C /* XCRemoteSwiftPackageReference "GRDBQuery" */,
+				AA4010742B544C2C00CCAC9B /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			productRefGroup = AA5D61432B29680800D6E0F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5D61412B29680800D6E0F6 /* SmartOvenDashboard */,
+				AA5D61522B29680900D6E0F6 /* SmartOvenDashboardTests */,
+				AA5D615C2B29680900D6E0F6 /* SmartOvenDashboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5D61402B29680800D6E0F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5D614E2B29680900D6E0F6 /* Preview Assets.xcassets in Resources */,
+				AAE7CA362B4DD24400B664E1 /* Settings.bundle in Resources */,
+				AA5D614A2B29680900D6E0F6 /* Assets.xcassets in Resources */,
+				AAE7CA382B4DD41600B664E1 /* license_plist.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5D61512B29680900D6E0F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5D615B2B29680900D6E0F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAE7CA392B4DD46400B664E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then\n/opt/homebrew/bin/license-plist --output-path SmartOvenDashboard/Settings.bundle\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5D613E2B29680800D6E0F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7B7FF62B3BB7DE003CAA31 /* AuthenticationService.swift in Sources */,
+				AA86062B2B40DBCE00D7292C /* Logging.swift in Sources */,
+				AAD1B5F82B412A6300E7C98C /* AppDatabase.swift in Sources */,
+				AA7B7FFD2B3BC7CB003CAA31 /* WebSocketManager.swift in Sources */,
+				AA86062F2B41032600D7292C /* WebAuthenticationSession.swift in Sources */,
+				AAE1669D2B3E69780072BEB4 /* QuickControlsView.swift in Sources */,
+				AA6E52992B3CC78000A8565A /* DevicesManager.swift in Sources */,
+				AA17BB892B57741800BE83B9 /* BooleanHistoryView.swift in Sources */,
+				AA17BB8B2B57844500BE83B9 /* PowerUsageView.swift in Sources */,
+				AAE7CA312B4CFDF600B664E1 /* TemperatureUnitPickerView.swift in Sources */,
+				AAD1B5FC2B412ABE00E7C98C /* HistoryRequest.swift in Sources */,
+				AA6E529B2B3CD2DE00A8565A /* Fixtures.swift in Sources */,
+				AAD1B5FD2B412ABE00E7C98C /* Persistence.swift in Sources */,
+				AA7B7FFB2B3BBEAF003CAA31 /* TokenManager.swift in Sources */,
+				AA5D61482B29680800D6E0F6 /* ContentView.swift in Sources */,
+				AAE7CA2F2B4CEA6600B664E1 /* DisplaySettingsManager.swift in Sources */,
+				AA8606262B40BE4C00D7292C /* OvenIntent.swift in Sources */,
+				AA4010712B52303C00CCAC9B /* SettingsView.swift in Sources */,
+				AAE7CA332B4D05F200B664E1 /* TimeIntervalPickerView.swift in Sources */,
+				AA8606282B40C61F00D7292C /* OvenShortcuts.swift in Sources */,
+				AA5D61462B29680800D6E0F6 /* SmartOvenDashboardApp.swift in Sources */,
+				AAC4C8782B50F084000E18B4 /* TestUIView.swift in Sources */,
+				AAD1B5FE2B412ABE00E7C98C /* HistoryPoint.swift in Sources */,
+				AA4010782B54843300CCAC9B /* DocumentInteractionController.swift in Sources */,
+				AAD1B6032B4142FF00E7C98C /* StoredTemperatureHistoryView.swift in Sources */,
+				AA86062D2B4102F300D7292C /* LoginStatusView.swift in Sources */,
+				AA7B7FFF2B3BCA7F003CAA31 /* OvenMessages.swift in Sources */,
+				AAC4C8762B4FADB3000E18B4 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5D614F2B29680900D6E0F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5D61582B29680900D6E0F6 /* SmartOvenDashboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5D61592B29680900D6E0F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5D61622B29680900D6E0F6 /* SmartOvenDashboardUITests.swift in Sources */,
+				AA5D61642B29680900D6E0F6 /* SmartOvenDashboardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5D61552B29680900D6E0F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5D61412B29680800D6E0F6 /* SmartOvenDashboard */;
+			targetProxy = AA5D61542B29680900D6E0F6 /* PBXContainerItemProxy */;
+		};
+		AA5D615F2B29680900D6E0F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5D61412B29680800D6E0F6 /* SmartOvenDashboard */;
+			targetProxy = AA5D615E2B29680900D6E0F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA5D61652B29680900D6E0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA5D61662B29680900D6E0F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA5D61682B29680900D6E0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartOvenDashboard/SmartOvenDashboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartOvenDashboard/Preview Content\"";
+				DEVELOPMENT_TEAM = 9H7G6M97G3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartOvenDashboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Entropy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.23rdStreet.SmartOvenDashboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA5D61692B29680900D6E0F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartOvenDashboard/SmartOvenDashboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartOvenDashboard/Preview Content\"";
+				DEVELOPMENT_TEAM = 9H7G6M97G3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartOvenDashboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Entropy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.23rdStreet.SmartOvenDashboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA5D616B2B29680900D6E0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9H7G6M97G3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.23rdStreet.SmartOvenDashboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartOvenDashboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartOvenDashboard";
+			};
+			name = Debug;
+		};
+		AA5D616C2B29680900D6E0F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9H7G6M97G3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.23rdStreet.SmartOvenDashboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartOvenDashboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartOvenDashboard";
+			};
+			name = Release;
+		};
+		AA5D616E2B29680900D6E0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9H7G6M97G3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.23rdStreet.SmartOvenDashboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartOvenDashboard;
+			};
+			name = Debug;
+		};
+		AA5D616F2B29680900D6E0F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9H7G6M97G3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.23rdStreet.SmartOvenDashboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartOvenDashboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5D613D2B29680800D6E0F6 /* Build configuration list for PBXProject "SmartOvenDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5D61652B29680900D6E0F6 /* Debug */,
+				AA5D61662B29680900D6E0F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5D61672B29680900D6E0F6 /* Build configuration list for PBXNativeTarget "SmartOvenDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5D61682B29680900D6E0F6 /* Debug */,
+				AA5D61692B29680900D6E0F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5D616A2B29680900D6E0F6 /* Build configuration list for PBXNativeTarget "SmartOvenDashboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5D616B2B29680900D6E0F6 /* Debug */,
+				AA5D616C2B29680900D6E0F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5D616D2B29680900D6E0F6 /* Build configuration list for PBXNativeTarget "SmartOvenDashboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5D616E2B29680900D6E0F6 /* Debug */,
+				AA5D616F2B29680900D6E0F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA4010742B544C2C00CCAC9B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.3;
+			};
+		};
+		AA6E529C2B3D2E0000A8565A /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.23.0;
+			};
+		};
+		AA7B7FEF2B3B91BE003CAA31 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
+		AA7B7FF22B3BB54F003CAA31 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		AA7B7FF72B3BBE86003CAA31 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+		AAD1B5FF2B4131E300E7C98C /* XCRemoteSwiftPackageReference "GRDBQuery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDBQuery.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA4010752B544C2C00CCAC9B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA4010742B544C2C00CCAC9B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		AA6E529D2B3D2E0000A8565A /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA6E529C2B3D2E0000A8565A /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		AA7B7FF02B3B91BE003CAA31 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA7B7FEF2B3B91BE003CAA31 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		AA7B7FF32B3BB54F003CAA31 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA7B7FF22B3BB54F003CAA31 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		AA7B7FF82B3BBE86003CAA31 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA7B7FF72B3BBE86003CAA31 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		AAD1B6002B4131E300E7C98C /* GRDBQuery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAD1B5FF2B4131E300E7C98C /* XCRemoteSwiftPackageReference "GRDBQuery" */;
+			productName = GRDBQuery;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA5D613A2B29680800D6E0F6 /* Project object */;
+}
